@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário Cadastro</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <center>
+        <form class="formulario" action="php/cadastro.php" method="POST">
+          <br />
+          <h1>Cadastro</h1>
+          <!-- Começo nome -->
+          <input
+            class="inputArea"
+            type="text"
+            name="nome"
+            required
+            placeholder="Nome"
+          /><br />
+          <!-- Termino nome-->
+          <!-- Começo e-mail -->
+          <input
+            class="inputArea"
+            type="text"
+            name="email"
+            required
+            placeholder="E-mail"
+          /><br />
+          <!-- Término e-mail -->
+          <!--Começo senha -->
+          <input
+            class="inputArea"
+            type="password"
+            name="senha"
+            required
+            placeholder="Senha"
+          />
+          <!--Término senha -->
+          <!-- Começo confirmação senha-->
+          <input
+            class="inputArea"
+            type="password"
+            name="confSenha"
+            required
+            placeholder="Confirmação da Senha"
+          /><br />
+          <!-- Término confirmação senha-->
+          <!-- Começo submit-->
+          <p>
+            <input type="submit" name="enviar" value="Cadastrar" />
+            <input type="reset" name="limparForm" value="Limpar Formulário" />
+          </p>
+          <!-- Término submit-->
+        </form>
+      </center>
+    </div>
+  </body>
+</html>

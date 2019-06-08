@@ -19,11 +19,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $confSenha = $_POST['confirmaçãosenha'];*/
 
-$cadastro = new Cadastro;
+Cadastro::verificacaoCadastro($_POST['nome'], $_POST['senha'], $_POST['email'], $_POST['confSenha']);
 
 //$cadastro->setNome($_POST['nome']);
 //$cadastro->setSenha($_POST['senha']);
-
-$cadastro->verificacaoCadastro($_POST['nome'], $_POST['senha'], $_POST['email'], $_POST['confirmaçãosenha']);
-
-
